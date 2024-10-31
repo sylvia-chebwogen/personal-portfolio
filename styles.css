@@ -1,0 +1,336 @@
+/* Base styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Header styles */
+header {
+  background-color: #001f3f; /* Navy blue */
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px; /* Spacing between menu items */
+}
+
+nav ul li a {
+  color: white; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('personalP.jpeg'); /* Background image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+  height: 60vh; /* Adjusted height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Text color for contrast */
+}
+
+.hero h1 {
+  font-size: 3em; /* Large heading */
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #d9534f; /* Red accent */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c9302c; /* Darker shade on hover */
+}
+
+
+/* Section styles */
+section {
+  padding: 40px 20px; /* Increased padding for sections */
+  margin: 20px auto; /* Center sections */
+  max-width: 1200px; /* Maximum width for sections */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* About section styles */
+.about-content {
+  display: flex; /* Flexbox layout */
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 150px; /* Fixed size for profile photo */
+  height: 150px;
+  border-radius: 50%; /* Circular image */
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Portfolio section styles */
+.portfolio .project-grid {
+  display: flex; /* Flexbox layout for projects */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: space-between; /* Space between projects */
+}
+
+.project {
+  flex: 1 1 calc(45% - 20px); /* Responsive project boxes */
+  margin: 10px;
+  padding: 15px;
+  background: #f8f9fa; /* Light gray background */
+  border-radius: 8px;
+  transition: transform 0.2s; /* Animation on hover */
+}
+
+.project:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Skills Section */
+.skills {
+   margin: 2rem auto;
+  padding: 1rem; /* Reduced padding */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  font-size: 2rem; /* Slightly smaller font */
+  color: navy;
+}
+
+/* Grid setup for skill items */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Three items per row */
+  grid-gap: 15px; /* Reduced the gap between items */
+  justify-items: center;
+  margin-bottom: 1rem; /* Small margin between rows */
+}
+
+/* Skill item styling */
+.skill-item, .add-skill {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 180px; /* Reduced width */
+  height: 180px; /* Reduced height */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.skill-item:hover, .add-skill:hover {
+  background-color: #ececec;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 2.5rem; /* Adjusted icon size */
+  color: navy;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 1.1rem; /* Slightly smaller font */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Add button styling */
+.add-skill {
+  background-color: #b4adad;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-skill span {
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex; /* Aligns icons in a row */
+  justify-content: center; /* Centers the icons horizontally */
+  gap: 20px; /* Space between icons */
+  margin-top: 20px; /* Space above icons */
+}
+
+.social-icons a {
+  display: flex; /* Enables flexbox for centering */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  width: 80px; /* Increased width */
+  height: 80px; /* Increased height */
+  border-radius: 50%; /* Creates a circle */
+  background-color: #f0f0f0; /* Background color for the circle */
+  color: #333; /* Icon color */
+  text-decoration: none; /* Removes underline from links */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  font-size: 24px; /* Increases icon size */
+}
+
+.social-icons a:hover {
+  background-color: #ddd; /* Change background color on hover */
+}
+
+
+/* Individual Social Media Colors */
+.social-icons a.email {
+  background-color: #EA4335; /* Gmail Red */
+}
+
+.social-icons a.instagram {
+  background-color: #C13584; /* Instagram Purple */
+}
+
+.social-icons a.whatsapp {
+  background-color: #25D366; /* WhatsApp Green */
+}
+
+.social-icons a.snapchat {
+  background-color: #FFFC00; /* Snapchat Yellow */
+  color: #000; /* Black icon for contrast */
+}
+
+.social-icons a.linkedin {
+  background-color: #0077B5; /* LinkedIn Blue */
+}
+
+.social-icons a.twitter {
+  background-color: #1DA1F2; /* Twitter Blue */
+}
+
+/* Add hover effects */
+.social-icons a:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #001f3f; /* Navy blue background */
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1em;
+}
+
+
+header {
+  background-color: #001f3f; /* Navy blue */
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Section styles */
+section {
+  padding: 60px 20px; /* More padding for spaciousness */
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-top: 40px; /* Separation from header */
+} 
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Social Media Icons */
+.social-links a {
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  background-color: #d9534f; /* Red accent on hover */
+}
+
+/* Individual Social Media Colors */
+.social-links a.email {
+  background-color: #EA4335; /* Gmail Red */
+}
+
+.social-links a.instagram {
+  background-color: #C13584; /* Instagram Purple */
+}
+
+.social-links a.whatsapp {
+  background-color: #25D366; /* WhatsApp Green */
+}
+
+.social-links a.linkedin {
+  background-color: #0077B5; /* LinkedIn Blue */
+}
+
+.social-links a.twitter {
+  background-color: #1DA1F2; /* Twitter Blue */
+}
+.hobbies-list {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+.hobbies-list li {
+  margin: 5px 0; /* Space between items */
+}
